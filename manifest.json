@@ -1,6 +1,7 @@
 {
   "name": "Chrome Site Table Fixer Extension",
   "version": "0.1",
+  "manifest_version": 2,
   "permissions": [
     "tabs", "http://developer.chrome.com/*"
   ],
