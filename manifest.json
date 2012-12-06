@@ -1,0 +1,14 @@
+{
+  "name": "Chrome Site Table Fixer Extension",
+  "version": "0.1",
+  "permissions": [
+    "tabs", "http://developer.chrome.com/*"
+  ],
+  "content_scripts": [ 
+	{
+  	"js" : ["js/table-fixer.js"],
+		"matches" : [ "<all_urls>" ],
+		"run_at" : "document_end",
+		"all_frames" : true
+	}]
+}
