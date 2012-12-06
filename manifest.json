@@ -3,12 +3,12 @@
   "version": "0.1",
   "manifest_version": 2,
   "permissions": [
-    "tabs", "http://developer.chrome.com/*"
+    "https://developer.chrome.com/*", "http://developer.chrome.com/*"
   ],
   "content_scripts": [ 
 	{
   	"js" : ["js/table-fixer.js"],
-		"matches" : [ "<all_urls>" ],
+		"matches" : [ "https://developer.chrome.com/*", "http://developer.chrome.com/*" ],
 		"run_at" : "document_end",
 		"all_frames" : true
 	}]
